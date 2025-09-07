@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project]
+name = "catk"
+version = "0.1.0"
+description = "CSV Automation ToolKit"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+dependencies = [
+    "pandas",
+    "openpyxl",
+    "requests",
+    "beautifulsoup4",
+    "pyyaml"
+]
+
+[project.scripts]
+catk = "catk.__main__:main"

@@ -1,0 +1,21 @@
+# Python キャッシュ
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ビルド成果物
+build/
+dist/
+*.egg-info/
+*.spec
+
+# 実行出力
+out/
+*.log
+
+# IDE/OS ごとのファイル
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

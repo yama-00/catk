@@ -1,0 +1,31 @@
+# configs/scrape.yml
+output_csv: "out/news.csv"
+encoding: "utf-8"
+user_agent: "CATK/0.1.0"
+retry: 1
+sleep_sec: 0.2
+
+sites:
+  - name: "SampleLocal"
+    url: "file:///C:/Users/mori_/OneDrive/デスクトップ/csv_project/examples/sample.html"
+
+    # ★ コード側が必須なので復活
+    list_selector: "ul.items"
+    # アイテム単位の要素
+    item_selector: "li.item"
+    # タイトル文字列を取る要素
+    title_selector: "a.title"
+    # リンクの属性名
+    link_attr: "href"
+
+    base_url: ""
+
+
+  # 実サイト例（動かすときに自分の対象へ変更）
+  # - name: "MyNews"
+  #   url: "https://example.com/news"
+  #   list_selector: "div.list"
+  #   item_selector: "article"
+  #   title_selector: "h2 > a"
+  #   link_attr: "href"
+  #   base_url: "https://example.com"

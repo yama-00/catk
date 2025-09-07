@@ -1,0 +1,25 @@
+# CATK (CSV Automation Toolkit)
+
+CSV整形・統合・スクレイピングを一気通貫で扱えるツール
+
+![Demo](docs/demo.gif)
+
+---
+
+## できること
+- **clean**: 空白・重複・文字化けを除去
+- **report**: 複数CSVを統合し Excel レポート
+- **scrape**: Webスクレイピング → CSV 蓄積
+
+---
+
+## 30秒デモの流れ
+```bash
+# 1) CSV整形
+catk clean --in examples/sales/project1.csv --out out/clean.csv
+
+# 2) 複数CSV統合 & Excelレポート
+catk report --glob "examples/sales/sales_*.csv" --outdir out
+
+# 3) スクレイピング（デモ用 sample.html）
+catk scrape --config configs/scrape.yml

@@ -1,0 +1,8 @@
+﻿CATK Quick Start
+----------------
+1) catk.exe と同梱フォルダを任意の場所に展開
+2) 下記を順に実行
+   .\catk.exe clean --in examples\sales\project1.csv --out out\clean.csv
+   .\catk.exe report --glob "examples\sales\sales_*.csv" --outdir out
+   .\catk.exe scrape --config configs\scrape.yml
+3) out\ フォルダに成果物ができます
