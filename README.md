@@ -23,3 +23,7 @@ catk report --glob "examples/sales/sales_*.csv" --outdir out
 
 # 3) スクレイピング（デモ用 sample.html）
 catk scrape --config configs/scrape.yml
+
+# catk
+CSV整形・統合・スクレイピングを一気通貫で扱えるツール
+>>>>>>> 142cd52587ce47f840e2ca36f8a3627555bb5696
