@@ -21,10 +21,10 @@ CSV整形・統合・スクレイピングを一気通貫で扱えるツール
 ## 30秒デモの流れ
 ```bash
 # 1) CSV整形
-catk clean --in examples/sales/project1.csv --out out/clean.csv
+catk clean --in examples/clean_demo/project1.csv --out out/clean.csv
 
 # 2) 複数CSV統合 & Excelレポート
-catk report --glob "examples/sales/sales_*.csv" --outdir out
+catk report --glob "examples/report_demo/sales_*.csv" --outdir out
 
 # 3) スクレイピング（デモ用 sample.html）
 catk scrape --config configs/scrape.yml
