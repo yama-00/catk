@@ -1,4 +1,5 @@
-﻿id,name,price,note
-A001,  山田  ,1,000,　
-A001,山田,1000,
-A002,佐藤,2,500,メモ
+﻿name,address,phone,email,age
+ Alice , 東京都港区 ,090-1234-5678, Alice@example.com ,20
+Bob,大阪市北区,(080) 9999 8888,bob@EXAMPLE.com,not_a_number
+Charlie, 名古屋市中区 ,080 0000 1111,,19
+Alice,東京都港区,9012345678,alice@example.com,20
